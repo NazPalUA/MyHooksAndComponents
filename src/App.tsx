@@ -1,34 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Menu from "./components/Menu/index"
+import Star from "./components/Star"
+import Button from './components/Button/Button'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <ul className='components'>
+      <li className='components_item'>
+        <strong className='components_name'>Menu component</strong>
+        <div className='components_custom-component'>
+          <Menu onOpen={() => console.log("Opened/closed")}>
+            <Menu.Button>Menu</Menu.Button>
+            <Menu.Dropdown>
+              <Menu.Item>Home</Menu.Item>
+              <Menu.Item>About</Menu.Item>
+              <Menu.Item>Contact</Menu.Item>
+              <Menu.Item>Blog</Menu.Item>
+            </Menu.Dropdown>
+          </Menu>
+        </div>
+      </li>
+      <li className='components_item'>
+        <strong className='components_name'>Star component</strong>
+        <div className='components_custom-component'>
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+        </div>
+      </li>
+      <li className='components_item'>
+        <strong className='components_name'>Button component</strong>
+        <div className='components_custom-component'>
+          <Button>Click me</Button>
+        </div>
+      </li>
+    </ul>
   )
 }
 
