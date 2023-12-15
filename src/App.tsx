@@ -3,6 +3,7 @@ import Menu from "./components/Menu/index"
 import Star from "./components/Star"
 import Button from './components/Button/Button'
 import Badge from './components/Badge/Badge'
+import Banner from './components/Banner/index'
 
 function App() {
 
@@ -51,6 +52,47 @@ function App() {
           <Badge color='red'>Pam</Badge>
           <Badge color='green' variant='pill'>Jim</Badge>
           <Badge color='yellow'>Stanley</Badge>
+        </div>
+      </li>
+
+      <li className='components_item'>
+        <strong className='components_name'>Banner component</strong>
+        <div className='components_custom-component'>
+          <Banner variant='success'>
+            <Banner.Title>
+            Congratulations!
+            </Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner>
+
+          <Banner variant='neutral'>
+            <Banner.Title>
+            Congratulations!
+            </Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner>
+
+          <Banner variant='error'>
+            <Banner.Title>
+            Congratulations!
+            </Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner>
+
+          <Banner variant='warning'>
+            <Banner.Title>
+            Congratulations!
+            </Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner>
         </div>
       </li>
 

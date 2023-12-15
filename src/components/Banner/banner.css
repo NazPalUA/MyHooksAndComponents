@@ -1,0 +1,94 @@
+.banner {
+    size: 1rem;
+    padding: 1em 3em;
+    margin: 5px;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: left;
+}
+
+.banner.success {
+    background-color: #ECFDF5;
+}
+
+.banner.warning {
+    background-color: #FFFBEB;
+}
+
+.banner.error {
+    background-color: #FEF2F2;
+}
+
+.banner.neutral {
+    background-color: #EFF6FF;
+}
+
+.banner-title {
+    size: 1.25rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.banner-title::before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner.success .banner-title {
+    color: #065F46;
+}
+
+.banner.success .banner-title::before {
+    background-image: url(img/check-circle.svg);
+}
+
+.banner.warning .banner-title {
+    color: #92400E;
+}
+
+.banner.warning .banner-title::before {
+    background-image: url(img/exclamation.svg);
+}
+
+.banner.error .banner-title {
+    color: #92400E;
+}
+
+.banner.error .banner-title::before {
+    background-image: url(img/x-circle.svg);
+}
+
+.banner.neutral .banner-title {
+    color: #1E40AF;
+}
+
+.banner.neutral .banner-title::before {
+    background-image: url(img/icon.svg);
+}
+
+.banner-text {
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.banner.success .banner-text {
+    color: #047857;
+}
+
+.banner.warning .banner-text {
+    color: #B45309;
+}
+
+.banner.error .banner-text {
+    color: #B45309;
+}
+
+.banner.neutral .banner-text {
+    color: #1C51B9;
+}
