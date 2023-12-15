@@ -2,11 +2,13 @@ import './App.css'
 import Menu from "./components/Menu/index"
 import Star from "./components/Star"
 import Button from './components/Button/Button'
+import Badge from './components/Badge/Badge'
 
 function App() {
 
   return (
     <ul className='components'>
+
       <li className='components_item'>
         <strong className='components_name'>Menu component</strong>
         <div className='components_custom-component'>
@@ -21,6 +23,7 @@ function App() {
           </Menu>
         </div>
       </li>
+
       <li className='components_item'>
         <strong className='components_name'>Star component</strong>
         <div className='components_custom-component'>
@@ -30,12 +33,27 @@ function App() {
           <Star />
         </div>
       </li>
+
       <li className='components_item'>
         <strong className='components_name'>Button component</strong>
         <div className='components_custom-component'>
           <Button>Click me</Button>
         </div>
       </li>
+
+      <li className='components_item'>
+        <strong className='components_name'>Badge component</strong>
+        <div className='components_custom-component'>
+          <Badge color='pink' variant='square'>Nazar</Badge>
+          <Badge color='indigo' variant='pill'>Marina</Badge>
+          <Badge variant='square'>Max</Badge>
+          <Badge color='purple' variant='pill'>Andy</Badge>
+          <Badge color='red'>Pam</Badge>
+          <Badge color='green' variant='pill'>Jim</Badge>
+          <Badge color='yellow'>Stanley</Badge>
+        </div>
+      </li>
+
     </ul>
   )
 }
