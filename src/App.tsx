@@ -4,6 +4,8 @@ import Star from "./components/Star"
 import Button from './components/Button/Button'
 import Badge from './components/Badge/Badge'
 import Banner from './components/Banner/index'
+import Testimonial from './components/Testimonial/index'
+import CustomerPhoto from './components/Testimonial/img/nazar.jpg'
 
 function App() {
 
@@ -93,6 +95,19 @@ function App() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam.
             </Banner.Text>
           </Banner>
+        </div>
+      </li>
+
+      <li className='components_item'>
+        <strong className='components_name'>Testimonial component</strong>
+        <div className='components_custom-component'>
+          <Testimonial imgSrc={CustomerPhoto}>
+            <Testimonial.Feedback>
+            <Testimonial.Name>Nazar Palamarchuk</Testimonial.Name>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. 
+            </Testimonial.Feedback>
+            <Testimonial.Location>Kyiv, Ukraine</Testimonial.Location>
+          </Testimonial>
         </div>
       </li>
 
