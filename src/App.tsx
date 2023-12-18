@@ -5,7 +5,8 @@ import Button from './components/Button/Button'
 import Badge from './components/Badge/Badge'
 import Banner from './components/Banner/index'
 import Testimonial from './components/Testimonial/index'
-import CustomerPhoto from './components/Testimonial/img/nazar.jpg'
+import NazarPhoto from './components/Testimonial/img/nazar.jpg'
+import MarinaPhoto from './components/Testimonial/img/marina.jpg'
 
 function App() {
 
@@ -101,13 +102,22 @@ function App() {
       <li className='components_item'>
         <strong className='components_name'>Testimonial component</strong>
         <div className='components_custom-component'>
-          <Testimonial imgSrc={CustomerPhoto}>
+          <Testimonial imgSrc={NazarPhoto}>
             <Testimonial.Feedback>
-            <Testimonial.Name>Nazar Palamarchuk</Testimonial.Name>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. 
             </Testimonial.Feedback>
+            <Testimonial.Name>Nazar Palamarchuk</Testimonial.Name>
             <Testimonial.Location>Kyiv, Ukraine</Testimonial.Location>
           </Testimonial>
+
+          <Testimonial imgSrc={MarinaPhoto}>
+            <Testimonial.Feedback>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. 
+            </Testimonial.Feedback>
+            <Testimonial.Name>Marina Savhuk</Testimonial.Name>
+            <Testimonial.Location>Poninka, Ukraine</Testimonial.Location>
+          </Testimonial>
+
         </div>
       </li>
 
